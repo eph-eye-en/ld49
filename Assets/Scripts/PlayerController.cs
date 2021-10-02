@@ -5,9 +5,11 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed;
+    public float Speed;
+    public Animator Animator;
 
     private Rigidbody2D _rigidbody;
+    private Transform _transform;
 
     private Vector2 movement;
 
@@ -17,17 +19,27 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         _rigidbody = gameObject.GetComponent<Rigidbody2D>();
+        _transform = gameObject.GetComponent<Transform>();
     }
 
     // Update is called once per frame
     void Update()
     {
         _rigidbody.velocity = movement;
+
+        var walking = movement.x != 0 || movement.y != 0;
+        if(walking)
+            _transform.rotation = Quaternion.Euler(
+                transform.rotation.x,
+                transform.rotation.y,
+                Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg);
+
+        Animator.SetBool("IsWalking", walking);
     }
 
     public void OnMove(InputValue input)
     {
-        movement = input.Get<Vector2>() * speed;
+        movement = input.Get<Vector2>() * Speed;
     }
 
     public void OnFire(InputValue input) 
