@@ -23,12 +23,13 @@ public class InteractionBubbleScript : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         Interactable _oldInteractable = collision.gameObject.GetComponent<Interactable>();
         if (_oldInteractable)
         {
             _playerController.InteractablesExit(_oldInteractable);
+            Debug.Log("ExitCollision");
         }
     }
 
