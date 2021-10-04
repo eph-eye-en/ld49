@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: -6867017205069401785}
   - component: {fileID: 520409504315877731}
   m_Layer: 0
-  m_Name: Router
+  m_Name: Printer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,9 +45,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14891c2e72fbbc2b8ba6e5d512d97206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MinFixedSeconds: 40
-  MaxFixedSeconds: 60
-  FixedBy: {fileID: 11400000, guid: debc629ba5bbbaef5bb5787e93b41f5b, type: 2}
+  MinFixedSeconds: 20
+  MaxFixedSeconds: 40
+  FixedBy: {fileID: 11400000, guid: da60dd07a87305cdca749fa67dbe590b, type: 2}
   ToolAlert: {fileID: 8296201411915625672}
   IsActive: 0
 --- !u!60 &520409504315877731
