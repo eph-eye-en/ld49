@@ -19,8 +19,8 @@ public class PlayerController : MonoBehaviour
 
     private HashSet<Interactable> _interactables = new HashSet<Interactable>();
 
-    private Interactable _toolHeld;
-    public Interactable ToolHeld 
+    private Tool _toolHeld;
+    public Tool ToolHeld 
     {
         get {
             return _toolHeld;
@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
             {
                 _toolHeld.transform.parent = null;
                 _toolHeld.transform.position = DropAnchor.transform.position;
+                _toolHeld.IsHeld = false;
                 _interactables.Add(_toolHeld);
             }
             _toolHeld = value;
@@ -39,6 +40,7 @@ public class PlayerController : MonoBehaviour
                 value.transform.parent = this.gameObject.transform;
                 value.transform.position = ToolAnchor.position;
                 value.transform.rotation = ToolAnchor.rotation;
+                value.IsHeld = true;
                 _interactables.Remove(value);
             }            
         }
@@ -66,15 +68,13 @@ public class PlayerController : MonoBehaviour
 
         Animator.SetBool("IsWalking", walking);
 
-        if (_interactables.Any())
+        Interactable _closestObject = FindClosestInteractable<Tool>();
+        foreach (Interactable interactable in _interactables)
         {
-            Interactable _closestObject = FindClosestInteractable();
-            foreach (Interactable interactable in _interactables)
-            {
-                interactable.GetComponent<Renderer>().material.color = new Color(0, 0, 1);
-            }
-            _closestObject.GetComponent<Renderer>().material.color = new Color(0, 1, 0);
+            //interactable.GetComponent<Renderer>().material.color = new Color(0, 0, 1);
+            interactable.isHighlighted = interactable == _closestObject;
         }
+        //_closestObject.GetComponent<Renderer>().material.color = new Color(0, 1, 0);
     }
 
     public void OnMove(InputValue input)
@@ -84,10 +84,11 @@ public class PlayerController : MonoBehaviour
 
     public void OnFire(InputValue input) 
     {
-        Interactable _closestObject = FindClosestInteractable();
-        if (_closestObject && _closestObject.type == Interactable.InteractableType.Tool)
+        var _closestObject = FindClosestInteractable<Tool>();
+        if (_closestObject != null)
         {
             ToolHeld = _closestObject;
+            _closestObject.isHighlighted = false;
         }
     }
 
@@ -98,36 +99,32 @@ public class PlayerController : MonoBehaviour
 
     public void OnUseTool(InputValue input) {
 
-        Interactable _closestObject = FindClosestInteractable();
-        if (_closestObject && _closestObject.type == Interactable.InteractableType.Objective)
+        Interactable closestObject = FindClosestInteractable<Questable>();
+        if (closestObject != null)
         {
             //Interact!
-            Debug.Log("Interacting");
+            Debug.Log($"Interacting with {closestObject.gameObject.name}");
         }
     }
 
-    public Interactable FindClosestInteractable()
+    public T FindClosestInteractable<T>() where T : Interactable
     {
-        if (_interactables.Any())
-        {
-            Interactable _closestObject = _interactables.First();
-            float _closestDistance = (_interactables.First().gameObject.transform.position - gameObject.transform.position).magnitude;
+        T closestObject = default(T);
+        float closestDistanceSqr = Mathf.Infinity;
 
-            foreach (Interactable interactable in _interactables)
+        var possible = _interactables
+            .Where(i => i.CanInteract && i is T)
+            .Select(i => i as T);
+        foreach (T interactable in possible)
+        {
+            float d = (interactable.gameObject.transform.position - gameObject.transform.position).sqrMagnitude;
+            if (d < closestDistanceSqr)
             {
-                float D = (interactable.gameObject.transform.position - gameObject.transform.position).magnitude;
-                if (D < _closestDistance)
-                {
-                    _closestObject = interactable;
-                }
+                closestObject = interactable;
             }
+        }
 
-            return _closestObject;
-        }
-        else
-        {
-            return null;
-        }
+        return closestObject;
     }
 
 
@@ -140,6 +137,7 @@ public class PlayerController : MonoBehaviour
     public void InteractablesExit(Interactable _oldInt)
     {
         _interactables.Remove(_oldInt);
+        _oldInt.isHighlighted = false;
 
     }
 

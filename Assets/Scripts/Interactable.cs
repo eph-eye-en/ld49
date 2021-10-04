@@ -2,36 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Interactable : MonoBehaviour
+public abstract class Interactable : MonoBehaviour
 {
-    public enum InteractableType { 
-        Tool,
-        Objective,
-        Door,
-    };
-
-    public InteractableType type;
+    public virtual bool CanInteract { get; set; }
     private bool _isHighlighted;
     public bool isHighlighted {
         get {
             return _isHighlighted;
         }
         set {
+            var oldVal = _isHighlighted;
             _isHighlighted = value;
-            if (value)
+            if (_isHighlighted && !oldVal)
                 StartHighlight();
-            else
+            if (!_isHighlighted && oldVal)
                 EndHighlight();
         }
     }
-    private Color _defaultColor;
 
-    void StartHighlight() { 
-    
-    }
-
-    void EndHighlight() { 
-    
-    }
-
+    public virtual void StartHighlight() { }
+    public virtual void EndHighlight() { }
 }
