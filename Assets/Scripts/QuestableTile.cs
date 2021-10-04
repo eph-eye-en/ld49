@@ -23,10 +23,10 @@ public class QuestableTile : Tile
     {
         Debug.Log("StartUp");
 
-        var c = go.GetComponent<PolygonCollider2D>();
-        var points = new List<Vector2>();
-        sprite.GetPhysicsShape(0, points);
-        c.points = points.ToArray();
+        //var c = go.GetComponent<PolygonCollider2D>();
+        //var points = new List<Vector2>();
+        //sprite.GetPhysicsShape(0, points);
+        //c.points = points.ToArray();
 
         return true;
     }
@@ -55,7 +55,7 @@ public class QuestableTile : Tile
         tileData.flags = TileFlags.LockTransform;
         tileData.colliderType = ColliderType.None;
 
-        tileData.gameObject = QuestablePrefab.gameObject;
+        //tileData.gameObject = QuestablePrefab.gameObject;
     }
 
     // This determines if the Tile at the position is the same RoadTile.

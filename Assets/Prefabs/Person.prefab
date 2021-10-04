@@ -274,9 +274,14 @@ MonoBehaviour:
   RelianceList: []
   ImportantRelianceList: []
   _maxAnnoyance: 100
-  AnnoyanceRate: 2
-  AnnoyanceDecreaseRate: 2
+  AnnoyanceRate: 4
+  AnnoyanceDecreaseRate: 8
   AnnoyanceBar: {fileID: 3327400636794953407}
+  PeopleSkins:
+  - {fileID: 8033919992411387779, guid: 50d4fa4f7d7d0b94eb3c1defaa61d277, type: 3}
+  - {fileID: 7708406356626112480, guid: 50d4fa4f7d7d0b94eb3c1defaa61d277, type: 3}
+  - {fileID: 8780275071318721872, guid: 50d4fa4f7d7d0b94eb3c1defaa61d277, type: 3}
+  - {fileID: 546232450038382996, guid: 50d4fa4f7d7d0b94eb3c1defaa61d277, type: 3}
 --- !u!1 &6220890930780309138
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,7 +409,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3731765804482129481
 RectTransform:
   m_ObjectHideFlags: 0

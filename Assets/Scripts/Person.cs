@@ -12,12 +12,14 @@ public class Person : MonoBehaviour
     public float AnnoyanceRate;
     public float AnnoyanceDecreaseRate;
     public Slider AnnoyanceBar;
+    public List<Sprite> PeopleSkins;
 
     void Start()
     {
         AnnoyanceBar.maxValue = _maxAnnoyance;
         AnnoyanceBar.minValue = 0;
         AnnoyanceBar.value = 0;
+        GetComponent<SpriteRenderer>().sprite = PeopleSkins[Random.Range(0, PeopleSkins.Count)];
     }
 
     // Update is called once per frame
