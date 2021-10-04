@@ -19,7 +19,6 @@ public class InteractionBubbleScript : MonoBehaviour
         if (_newInteractable)
         {
             _playerController.InteractablesEnter(_newInteractable);
-            Debug.Log("enteredCollision");
         }
     }
 
@@ -29,7 +28,6 @@ public class InteractionBubbleScript : MonoBehaviour
         if (_oldInteractable)
         {
             _playerController.InteractablesExit(_oldInteractable);
-            Debug.Log("ExitCollision");
         }
     }
 

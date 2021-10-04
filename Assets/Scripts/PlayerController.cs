@@ -122,9 +122,7 @@ public class PlayerController : MonoBehaviour
                 closestObject = interactable;
                 closestDistanceSqr = d;
             }
-            Debug.Log(interactable + "" + d);
         }
-        Debug.LogWarning(closestObject);
         return closestObject;
     }
 
