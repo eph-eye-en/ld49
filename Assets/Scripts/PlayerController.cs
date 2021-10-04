@@ -61,6 +61,12 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!GameManager.Instance.IsGameRunning)
+        {
+            _rigidbody.velocity = Vector2.zero;
+            return;
+        }
+
         _rigidbody.velocity = _movement;
 
         var walking = _movement.x != 0 || _movement.y != 0;

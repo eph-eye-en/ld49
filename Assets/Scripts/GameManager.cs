@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     private static GameManager _instance;
     public static GameManager Instance { get { return _instance; } }
     public bool IsGameRunning = false;
+    public event System.EventHandler OnGameStart;
 
     public Canvas GameStartScreen;
     public Text CountdownText;
@@ -85,6 +86,7 @@ public class GameManager : MonoBehaviour
         IsGameRunning = true;
         Enable(GameRunningScreen, true);
         _gameTimer = GameDuration;
+        OnGameStart.Invoke(this, null);
     }
 
     void GameTimer() 

@@ -14,16 +14,26 @@ public class Questable : Interactable
     public System.DateTime NextActivateTime;
     public override bool CanInteract => IsActive;
 
+    private GameManager GameManager;
 
     void Start()
     {
         //_spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
 
-        NextActivateTime = GetNextActivateTime();
+        GameManager = GameManager.Instance;
+        GameManager.OnGameStart += OnGameStart;
     }
 
-    void Update()
+	private void OnGameStart(object sender, System.EventArgs e)
+	{
+        NextActivateTime = GetNextActivateTime();
+	}
+
+	void Update()
     {
+        if(!GameManager.IsGameRunning)
+            return;
+
         if(!IsActive && System.DateTime.Now > NextActivateTime)
             Activate();
     }
