@@ -1922,7 +1922,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'You wifi was too unstable for people to do their jobs properly!
+  m_Text: 'The Wi-Fi was too unstable for people to do their jobs properly!
 
 
     You
@@ -2286,7 +2286,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You succesfully kept the wifi stable throughout the day!
+  m_Text: You succesfully kept the Wi-Fi stable throughout the day!
 --- !u!222 &1030942212
 CanvasRenderer:
   m_ObjectHideFlags: 0
