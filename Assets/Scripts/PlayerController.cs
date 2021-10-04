@@ -99,11 +99,10 @@ public class PlayerController : MonoBehaviour
 
     public void OnUseTool(InputValue input) {
 
-        Interactable closestObject = FindClosestInteractable<Questable>();
+        Questable closestObject = FindClosestInteractable<Questable>();
         if (closestObject != null)
         {
-            //Interact!
-            Debug.Log($"Interacting with {closestObject.gameObject.name}");
+            closestObject.TryInteract(ToolHeld.Type);
         }
     }
 

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Tool : Interactable
 {
+    public ToolType Type;
     public float FlashFrequency;
     public float MinBrightness;
     public bool IsHeld;
@@ -16,6 +17,7 @@ public class Tool : Interactable
     void Start()
     {
         _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+		_spriteRenderer.sprite = Type.Sprite;
     }
 
     void Update()
