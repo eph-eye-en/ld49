@@ -15,9 +15,14 @@ public class InteractionBubbleScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Bubble enter");
         Interactable _newInteractable = collision.gameObject.GetComponent<Interactable>();
-        if (_newInteractable)
+        Debug.Log(collision.gameObject);
+        Debug.Log(collision.gameObject.name);
+        Debug.Log(collision.gameObject.GetComponent<Questable>());
+        if (_newInteractable != null)
         {
+            Debug.Log("Interactable");
             _playerController.InteractablesEnter(_newInteractable);
         }
     }
@@ -25,7 +30,7 @@ public class InteractionBubbleScript : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         Interactable _oldInteractable = collision.gameObject.GetComponent<Interactable>();
-        if (_oldInteractable)
+        if (_oldInteractable != null)
         {
             _playerController.InteractablesExit(_oldInteractable);
         }

@@ -1,22 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class Questable : Interactable
 {
     public int MinFixedSeconds;
     public int MaxFixedSeconds;
     public ToolType FixedBy;
+    public SpriteRenderer ToolAlert;
 
     public bool IsActive;
     public System.DateTime NextActivateTime;
     public override bool CanInteract => IsActive;
 
-    private SpriteRenderer _spriteRenderer;
 
     void Start()
     {
-        _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        //_spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
 
         NextActivateTime = GetNextActivateTime();
     }
@@ -30,15 +31,21 @@ public class Questable : Interactable
     void Activate()
     {
         IsActive = true;
-        _spriteRenderer.color = new Color(255, 0, 0);
+        UpdateAlert();
     }
 
 	void Deactivate()
 	{
 		IsActive = false;
-        _spriteRenderer.color = Color.white;
+        UpdateAlert();
         NextActivateTime = GetNextActivateTime();
 	}
+
+    void UpdateAlert()
+    {
+        ToolAlert.color = isHighlighted ? Color.black : Color.white;
+        ToolAlert.sprite = IsActive ? FixedBy.Sprite : null;
+    }
 
     System.DateTime GetNextActivateTime()
     {
@@ -54,5 +61,15 @@ public class Questable : Interactable
             return false;
         Deactivate();
         return true;
+	}
+
+	public override void StartHighlight()
+	{
+		UpdateAlert();
+    }
+
+	public override void EndHighlight()
+	{
+		UpdateAlert();
 	}
 }

@@ -130,7 +130,7 @@ public class PlayerController : MonoBehaviour
     public void InteractablesEnter(Interactable _newInt)
     {
         _interactables.Add(_newInt);
-
+        Debug.Log("InteractablesEnter");
     }
 
     public void InteractablesExit(Interactable _oldInt)
