@@ -120,9 +120,9 @@ public class PlayerController : MonoBehaviour
             if (d < closestDistanceSqr)
             {
                 closestObject = interactable;
+                closestDistanceSqr = d;
             }
         }
-
         return closestObject;
     }
 
