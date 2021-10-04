@@ -23,6 +23,33 @@ TextureImporter:
   - first:
       213: -1364976747262443908
     second: FurnitureTiles_6
+  - first:
+      213: -7248562640242201019
+    second: FurnitureTiles_7
+  - first:
+      213: -7595412655588813445
+    second: FurnitureTiles_8
+  - first:
+      213: 5566719000556286069
+    second: FurnitureTiles_9
+  - first:
+      213: -215101036794376435
+    second: FurnitureTiles_10
+  - first:
+      213: 7357551767204355661
+    second: FurnitureTiles_11
+  - first:
+      213: 7281629712150406596
+    second: FurnitureTiles_12
+  - first:
+      213: -130312607026330335
+    second: FurnitureTiles_13
+  - first:
+      213: 2068071681935981699
+    second: FurnitureTiles_14
+  - first:
+      213: -2326296061280906429
+    second: FurnitureTiles_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -128,14 +155,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
+        y: 96
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: 1}
+        - {x: -16, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: 1}
       tessellationDetail: 0
       bones: []
       spriteID: 765930d4c5c146bd0800000000000000
@@ -149,14 +180,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 64
+        y: 96
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: -3}
+        - {x: -16, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -3}
       tessellationDetail: 0
       bones: []
       spriteID: 2f51bd3ddf70708b0800000000000000
@@ -170,14 +205,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 64
+        y: 96
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: -3}
+        - {x: -16, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -3}
       tessellationDetail: 0
       bones: []
       spriteID: 2ef7a66d4929b3b40800000000000000
@@ -190,15 +229,19 @@ TextureImporter:
       name: FurnitureTiles_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
+        x: 96
+        y: 96
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -3, y: -16}
+        - {x: -3, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
       tessellationDetail: 0
       bones: []
       spriteID: e31b5c6f15a7a5a60800000000000000
@@ -211,15 +254,19 @@ TextureImporter:
       name: FurnitureTiles_4
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
+        x: 0
+        y: 64
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: -2}
+        - {x: -16, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -2}
       tessellationDetail: 0
       bones: []
       spriteID: 38acaf23a0ffb76c0800000000000000
@@ -232,15 +279,27 @@ TextureImporter:
       name: FurnitureTiles_5
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
+        x: 32
+        y: 64
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: -11, y: -3}
+        - {x: -11, y: 3}
+        - {x: -8, y: 8}
+        - {x: -3, y: 11}
+        - {x: 3, y: 11}
+        - {x: 8, y: 8}
+        - {x: 11, y: 3}
+        - {x: 11, y: -3}
+        - {x: 8, y: -8}
+        - {x: 3, y: -11}
+        - {x: -3, y: -11}
       tessellationDetail: 0
       bones: []
       spriteID: fce640cde5eef2100800000000000000
@@ -253,19 +312,264 @@ TextureImporter:
       name: FurnitureTiles_6
       rect:
         serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -11}
+        - {x: -3, y: -11}
+        - {x: -8, y: -8}
+        - {x: -11, y: -3}
+        - {x: -11, y: 3}
+        - {x: -8, y: 8}
+        - {x: -3, y: 11}
+        - {x: 3, y: 11}
+        - {x: 8, y: 8}
+        - {x: 11, y: 3}
+        - {x: 11, y: -3}
+        - {x: 8, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ef0cc51e0ae0de0800000000000000
+      internalID: -1364976747262443908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FurnitureTiles_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 3}
+        - {x: 16, y: 3}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e2238eeaee76b90800000000000000
+      internalID: -7248562640242201019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FurnitureTiles_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -11}
+        - {x: -3, y: -11}
+        - {x: -8, y: -8}
+        - {x: -11, y: -3}
+        - {x: -11, y: 3}
+        - {x: -8, y: 8}
+        - {x: -3, y: 11}
+        - {x: 3, y: 11}
+        - {x: 8, y: 8}
+        - {x: 11, y: 3}
+        - {x: 11, y: -3}
+        - {x: 8, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b755f159e6ca79690800000000000000
+      internalID: -7595412655588813445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FurnitureTiles_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 3}
+        - {x: 16, y: 3}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5703390ff65f04d40800000000000000
+      internalID: 5566719000556286069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FurnitureTiles_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -3, y: -16}
+        - {x: -3, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f8d072fbec30df0800000000000000
+      internalID: -215101036794376435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FurnitureTiles_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 3, y: 16}
+        - {x: 3, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e53cca9564b1660800000000000000
+      internalID: 7357551767204355661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FurnitureTiles_12
+      rect:
+        serializedVersion: 2
         x: 0
         y: 0
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -2, y: -16}
+        - {x: -2, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
       tessellationDetail: 0
       bones: []
-      spriteID: c7ef0cc51e0ae0de0800000000000000
-      internalID: -1364976747262443908
+      spriteID: 4c5a7aab4ab8d0560800000000000000
+      internalID: 7281629712150406596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FurnitureTiles_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 2, y: 16}
+        - {x: 2, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 125c074df59013ef0800000000000000
+      internalID: -130312607026330335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FurnitureTiles_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 2}
+        - {x: 16, y: 2}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38cb6d3dc3443bc10800000000000000
+      internalID: 2068071681935981699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FurnitureTiles_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 3, y: 16}
+        - {x: 3, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34316f8be0657bfd0800000000000000
+      internalID: -2326296061280906429
       vertices: []
       indices: 
       edges: []

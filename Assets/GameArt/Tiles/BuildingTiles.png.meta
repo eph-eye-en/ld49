@@ -56,6 +56,21 @@ TextureImporter:
   - first:
       213: 5767350284994774245
     second: BuildingTiles_17
+  - first:
+      213: 1453499750968355403
+    second: BuildingTiles_18
+  - first:
+      213: -7030076155710783235
+    second: BuildingTiles_19
+  - first:
+      213: -4967419045219107978
+    second: BuildingTiles_20
+  - first:
+      213: -2875566686537522201
+    second: BuildingTiles_21
+  - first:
+      213: 4156866469206171645
+    second: BuildingTiles_22
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -165,10 +180,14 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
       spriteID: fa812f1bb9ccd6c50800000000000000
@@ -186,10 +205,14 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
       spriteID: 875fa43a5d3e04900800000000000000
@@ -207,10 +230,14 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
       spriteID: 5b69518d1750be830800000000000000
@@ -228,10 +255,14 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
       spriteID: a6f5ffbc540c06740800000000000000
@@ -244,15 +275,19 @@ TextureImporter:
       name: BuildingTiles_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
+        x: 128
+        y: 128
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
       spriteID: cc1587f1550d880a0800000000000000
@@ -265,15 +300,19 @@ TextureImporter:
       name: BuildingTiles_5
       rect:
         serializedVersion: 2
-        x: 32
+        x: 0
         y: 96
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
       spriteID: f7d8b72584a6d0a00800000000000000
@@ -286,15 +325,19 @@ TextureImporter:
       name: BuildingTiles_6
       rect:
         serializedVersion: 2
-        x: 64
+        x: 32
         y: 96
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
       spriteID: a93c9da42b2cb0360800000000000000
@@ -307,15 +350,19 @@ TextureImporter:
       name: BuildingTiles_7
       rect:
         serializedVersion: 2
-        x: 96
+        x: 64
         y: 96
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
       spriteID: 9f5a959237b0b2c30800000000000000
@@ -328,15 +375,19 @@ TextureImporter:
       name: BuildingTiles_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 96
+        y: 96
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
       spriteID: 286d167cc5f2b4f40800000000000000
@@ -349,15 +400,19 @@ TextureImporter:
       name: BuildingTiles_9
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
+        x: 128
+        y: 96
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
       spriteID: e69293b81cddf20d0800000000000000
@@ -370,15 +425,19 @@ TextureImporter:
       name: BuildingTiles_10
       rect:
         serializedVersion: 2
-        x: 64
+        x: 0
         y: 64
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
       spriteID: d7ad22aafdbf5f890800000000000000
@@ -391,15 +450,19 @@ TextureImporter:
       name: BuildingTiles_11
       rect:
         serializedVersion: 2
-        x: 96
+        x: 32
         y: 64
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
       spriteID: 3391eaab872ab62f0800000000000000
@@ -412,15 +475,19 @@ TextureImporter:
       name: BuildingTiles_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
+        x: 64
+        y: 64
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: 9}
+        - {x: -16, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: 9}
       tessellationDetail: 0
       bones: []
       spriteID: 3de120535bef09710800000000000000
@@ -433,15 +500,19 @@ TextureImporter:
       name: BuildingTiles_13
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
+        x: 96
+        y: 64
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: -16}
+        - {x: -16, y: -9}
+        - {x: 16, y: -9}
+        - {x: 16, y: -16}
       tessellationDetail: 0
       bones: []
       spriteID: 82f8d8ae6dd0fe290800000000000000
@@ -454,15 +525,19 @@ TextureImporter:
       name: BuildingTiles_14
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
+        x: 128
+        y: 64
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
       spriteID: 631a9e7ee232dfde0800000000000000
@@ -475,12 +550,12 @@ TextureImporter:
       name: BuildingTiles_15
       rect:
         serializedVersion: 2
-        x: 96
+        x: 0
         y: 32
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -496,12 +571,12 @@ TextureImporter:
       name: BuildingTiles_16
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 32
+        y: 32
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -517,19 +592,140 @@ TextureImporter:
       name: BuildingTiles_17
       rect:
         serializedVersion: 2
-        x: 32
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: -9, y: 16}
+        - {x: -9, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e48c58078eb90050800000000000000
+      internalID: 5767350284994774245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingTiles_18
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 9, y: -16}
+        - {x: 9, y: 16}
+        - {x: 16, y: 16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a6691925edb2410800000000000000
+      internalID: 1453499750968355403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingTiles_19
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: df04aeabbf6207e90800000000000000
+      internalID: -7030076155710783235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingTiles_20
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 0
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e48c58078eb90050800000000000000
-      internalID: 5767350284994774245
+      spriteID: 67b743762be201bb0800000000000000
+      internalID: -4967419045219107978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingTiles_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e3ebf0855fe718d0800000000000000
+      internalID: -2875566686537522201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BuildingTiles_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff14cb970820b930800000000000000
+      internalID: 4156866469206171645
       vertices: []
       indices: 
       edges: []
