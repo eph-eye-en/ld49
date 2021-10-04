@@ -21,8 +21,6 @@ public class QuestableTile : Tile
 
     public override bool StartUp(Vector3Int location, ITilemap tilemap, GameObject go)
     {
-        Debug.Log("StartUp");
-
         //var c = go.GetComponent<PolygonCollider2D>();
         //var points = new List<Vector2>();
         //sprite.GetPhysicsShape(0, points);
