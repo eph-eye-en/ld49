@@ -120,9 +120,11 @@ public class PlayerController : MonoBehaviour
             if (d < closestDistanceSqr)
             {
                 closestObject = interactable;
+                closestDistanceSqr = d;
             }
+            Debug.Log(interactable + "" + d);
         }
-
+        Debug.LogWarning(closestObject);
         return closestObject;
     }
 
