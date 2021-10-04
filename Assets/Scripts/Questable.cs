@@ -60,6 +60,7 @@ public class Questable : Interactable
 		if(FixedBy != tool)
             return false;
         Deactivate();
+        GetComponent<AudioSource>().Play();
         return true;
 	}
 

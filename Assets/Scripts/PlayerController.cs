@@ -27,6 +27,9 @@ public class PlayerController : MonoBehaviour
         }
 
         set {
+            if(value!=_toolHeld)
+                GetComponent<AudioSource>().Play();
+
             if (_toolHeld)
             {
                 _toolHeld.transform.parent = null;
@@ -42,7 +45,8 @@ public class PlayerController : MonoBehaviour
                 value.transform.rotation = ToolAnchor.rotation;
                 value.IsHeld = true;
                 _interactables.Remove(value);
-            }            
+
+            }
         }
 
     }
@@ -94,7 +98,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnDrop(InputValue input) 
     {
-        ToolHeld = null;    
+        ToolHeld = null;
     }
 
     public void OnUseTool(InputValue input) {
