@@ -46,8 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14891c2e72fbbc2b8ba6e5d512d97206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MinFixedSeconds: 5
-  MaxFixedSeconds: 10
+  MinFixedSeconds: 40
+  MaxFixedSeconds: 60
   FixedBy: {fileID: 11400000, guid: eb02bb65684effdd1b40f5d4042930a8, type: 2}
   ToolAlert: {fileID: 8296201411915625672}
   IsActive: 0
