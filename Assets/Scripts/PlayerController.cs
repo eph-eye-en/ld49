@@ -106,6 +106,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void OnAnyKeyPressed(InputValue input)
+    {
+        GameManager.Instance.OnAnyKeyPressed(input);
+    }
+
     public T FindClosestInteractable<T>() where T : Interactable
     {
         T closestObject = default(T);

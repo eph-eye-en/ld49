@@ -31,7 +31,7 @@ public class Person : MonoBehaviour
             if (_annoyance > _maxAnnoyance)
             {
                 AnnoyanceBar.value = _maxAnnoyance;
-                //End Game
+                GameManager.Instance.GameLose(this);
             }
             else
             {
